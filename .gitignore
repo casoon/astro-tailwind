@@ -2,9 +2,15 @@
 dist/
 .output/
 .yarn/*
-!.yarn/releases
+!.yarn/cache
+!.yarn/patches
 !.yarn/plugins
-.pnp.*
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+node_modules
+yarn-error.log
 
 # dependencies
 node_modules/

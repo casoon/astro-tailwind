@@ -4,7 +4,7 @@ import compress from 'astro-compress';
 import alpine from '@astrojs/alpinejs';
 import partytown from '@astrojs/partytown';
 import cloudflare from '@astrojs/cloudflare';
-import UnoCSS from 'unocss/astro'
+import tailwind from '@astrojs/tailwind';
 
 
 // https://astro.build/config
@@ -29,7 +29,7 @@ export default defineConfig(
             }),
             alpine(),
             partytown(),
-            UnoCSS({ injectReset: true }),
+            tailwind(),
         ],
         image: {
             // Example: Enable the Sharp-based image service
