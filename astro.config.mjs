@@ -3,15 +3,12 @@ import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 import alpine from '@astrojs/alpinejs';
 import partytown from '@astrojs/partytown';
-import cloudflare from '@astrojs/cloudflare';
-import tailwind from '@astrojs/tailwind';
+import unoCSS from 'unocss/astro'
 
 
 // https://astro.build/config
 export default defineConfig(
     {
-        output: 'server',
-        adapter: cloudflare({ mode: 'directory' }),
         server: { port: 8080 },
         site: 'https://www.changethis.com',
         integrations: [
@@ -27,9 +24,9 @@ export default defineConfig(
                 svg: false,
                 logger: 0,
             }),
-            alpine(),
+            //alpine(),
             partytown(),
-            tailwind(),
+            unoCSS(),
         ],
         image: {
             // Example: Enable the Sharp-based image service

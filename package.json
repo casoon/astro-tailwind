@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/casoon/astro-starter.git"
+    "url": "git://github.com/casoon/astro-tailwind.git"
   },
   "license": "MIT",
   "author": {
@@ -34,26 +34,22 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.1",
-    "@astrojs/cloudflare": "^7.7.1",
     "@astrojs/mdx": "^1.1.5",
     "@astrojs/partytown": "^2.0.2",
-    "@astrojs/tailwind": "^5.0.2",
     "@barba/core": "^2.9.7",
-    "@fontsource/roboto": "^5.0.8",
     "@types/alpinejs": "^3.13.5",
+    "@unocss/astro": "^0.57.7",
+    "@unocss/postcss": "^0.57.7",
+    "@unocss/preset-wind": "^0.57.7",
     "alpinejs": "^3.13.3",
     "animate.css": "^4.1.1",
     "astro": "^3.6.0",
     "astro-robots-txt": "^1.0.0",
     "core-js": "^3.33.3",
-    "open-props": "^1.6.13",
-    "postcss-html": "^1.5.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-recommended": "^13.0.0",
-    "stylelint-config-recommended-scss": "^13.1.0",
-    "stylelint-config-standard": "^34.0.0",
     "svgo": "^3.0.4",
-    "tailwindcss": "^3.3.5",
+    "swiper": "^11.0.5",
+    "unocss": "^0.57.7",
+    "vite": "^5.0.2",
     "vitest": "^0.34.6"
   },
   "devDependencies": {
@@ -71,12 +67,10 @@
     "postcss-csso": "^6.0.1",
     "postcss-custom-media": "^10.0.2",
     "postcss-import": "^15.1.0",
-    "postcss-jit-props": "^1.0.14",
     "postcss-media-minmax": "^5.0.0",
     "postcss-nesting": "^12.0.1",
     "postcss-preset-env": "^9.3.0",
-    "sass": "^1.69.5",
-    "sass-true": "^7.0.0"
+    "typescript-esbuild": "^0.3.1"
   },
   "packageManager": "yarn@4.0.1"
 }

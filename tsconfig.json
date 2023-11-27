@@ -5,13 +5,8 @@
     "types": ["@astrojs/image/client"],
     "strictNullChecks": true,
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@content/*": ["src/content/*"],
-      "@data/*": ["src/data/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles/*": ["src/styles/*"]
+      "~/*": ["./*"],
+      "@/*": ["./src/*"]
     }
   }
 }

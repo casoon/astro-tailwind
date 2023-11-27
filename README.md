@@ -1,10 +1,11 @@
-# Astro Template
+# Astro UnoCSS/Tailwind Template
 This is a sample starter template for building fully static site using [Astro](https://astro.build).
 
 ## Features
 
 - Astro 3.x
-- Alpine.js 3
+- Alpine.js 3.x
+- UnoCSS with Tailwind preset
 
 ### Install Dependencies
 `npm install` or `yarn install`
