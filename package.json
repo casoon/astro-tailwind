@@ -1,6 +1,6 @@
 {
-  "name": "astro-starter",
-  "version": "0.1.0",
+  "name": "astro-tailwind",
+  "version": "0.2.0",
   "type": "module",
   "private": true,
   "description": "Static pages with Astro",
@@ -25,12 +25,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier --write --plugin=prettier-plugin-astro .",
-    "lint:scss": "stylelint 'src/**/*.{astro,scss,astro}'",
-    "lint:css": "stylelint \"src/**/*.{css,astro}\"",
-    "prettier:check": "prettier --check --plugin=prettier-plugin-astro .",
-    "test": "vitest"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
