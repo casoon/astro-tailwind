@@ -1,8 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import 'animate.css';
-import '@unocss/reset/tailwind.css'
-import '@/styles/global.css';
+import '@/styles/tailwind.css';
 import SEO, { type Props as SEOProps } from "@/components/SEO.astro";
 
 export interface Props {
@@ -22,8 +21,24 @@ const { seo}: Props = Astro.props;
 		<SEO {...seo} />
 		<ViewTransitions />
 	</head>
-	<body>
+	<body class="bg-base text-neutral">
+	<header class="bg-primary text-white p-4">
+		<h1 class="text-3xl">Astro-Starter</h1>
+		<nav>
+			<ul class="flex space-x-4">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/services">Services</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="p-4">
 		<slot />
+	</main>
+	<footer class="bg-secondary text-white p-4 text-center">
+		<p>&copy; 2024 Astro-Starter</p>
+	</footer>
 	</body>
 </html>
 <style is:global>

@@ -1,12 +1,36 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strict", // Extends a base configuration with strict settings
   "compilerOptions": {
-    "baseUrl": ".",
-    "types": ["@astrojs/image/client"],
-    "strictNullChecks": true,
+    "target": "ESNext", // Use the latest ECMAScript version
+    "module": "ESNext", // Use the ESNext module system
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "isolatedModules": true, // Each file is treated as a separate module
+    "noEmit": true, // Do not emit output files
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "strictNullChecks": true, // Enable strict null checks
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./src/*"]
-    }
-  }
+      "~/*": ["./*"], // Alias for the project root directory
+      "@/*": ["./src/*"] // Alias for the src directory
+    },
+    // Additional recommended options
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Ensure file name casing consistency
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": true, // Report errors in JavaScript files
+    "jsx": "preserve", // Preserve JSX as it is (for React or similar frameworks)
+    "lib": ["dom", "esnext"], // Specify library files to be included in the compilation
+    "outDir": "./dist", // Redirect output structure to the directory
+    "rootDir": "./src", // Specify the root directory of input files
+    "incremental": true, // Enable incremental compilation
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "noImplicitReturns": true, // Report error when not all code paths in function return a value
+    "noFallthroughCasesInSwitch": true // Report errors for fallthrough cases in switch statements
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist directories
 }
